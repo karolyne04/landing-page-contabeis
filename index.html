@@ -8,19 +8,20 @@
     <title>Currículo</title>
     <link href="estilo.css" rel="stylesheet">
     <link href="pai.jpeg" rel="icon">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-kRo9UljIqTYt9rk0J6JbuZs3hsqtR+sqHv8Msz3Gvq5LN9h7ElUv43kmAW0fP31QF3bBnxEz+8Ug0v3STPGZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 
 <body>
     <header class="cabeca">
         <nav class="navbar">
-            <div class="foto-nome">
-                <img src="pai.jpeg">
-                <p class="nome">Adailsom Perreira da Silva</p>
-            </div>
             <div class="links">
                 <ul class="link-pagina">
                     <li>
-                        <a  href="#servico" >Serviço</a>
+                        <a href="#servico">Serviço</a>
                     </li>
                     <li>
                         <a href="#contatos">Contato</a>
@@ -39,22 +40,25 @@
         </div>
         <div class="text">
             <div class="resumo">
-                <h3>Sobre mim</h3>
-                <p>
-                    Meu nome Adailsom Perreira da Silva, Possui graduação em Ciências Contábeis, UESPI-Universidade Estadual
+                <p class="text-about-me">Sobre mim</p>
+                <p  class="profile">
+                    Meu nome Adailsom Perreira da Silva, Possui graduação em Ciências Contábeis, UESPI-Universidade
+                    Estadual
                     do Piauí(2018),
-                    Pós-graduação em MBA em Controladoria-UNINOVE-Universidade nove de julho(2014) Administração de Empresas
+                    Pós-graduação em MBA em Controladoria-UNINOVE-Universidade nove de julho(2014) Administração de
+                    Empresas
                     AESPI-Associaçã
                     de Ensino Superior do Piauí(2010), Atuamente é Seletista como Contador(técnico Administrativo
                     Financeiro) SEDUC-PI(2017-2023)
-                    auxiliar administrativo - Tivoli e administrativo de obras (2013-2015), almoxarife de obras (2010-2013),
+                    auxiliar administrativo - Tivoli e administrativo de obras (2013-2015), almoxarife de obras
+                    (2010-2013),
                     Aux. Administrativo
                     Prefeitura municipal de Floresta do Piauí(2001-2010).
                 </p>
             </div>
             <div class="servico" id="servico">
-                <h3> Alguns se meus serviços</h3>
-                <p>
+                <p class="servi"> Alguns se meus serviços</p>
+                <p class="serv">
                     Prestar consultoria e informações gerenciais;
                     Fazer relatórios gerenciais econômicos e financeiros;
                     calcular índices econômicos e financeiros;
@@ -67,7 +71,7 @@
                 </p>
             </div>
             <div class="conteudo" id="conteudo">
-                <h3>Formação acadêmica/titulação</h3>
+                <p class="titration">Formação acadêmica/titulação</p>
                 <p class="especializacao">
                     Especialização em MBA EM CONTROLADORIA,
                     Universidade Nove de julho, UNINOVE, São Paulo, Brasil
@@ -93,46 +97,51 @@
                 </p>
             </div>
         </div>
-        
+
+
     </main>
     <footer class="contacts footer">
         <div class="contatos" id="contatos">
             <div class="sujestao">
                 <form class="contato-sujestao">
-                    <input type="text" placeholder="Nome" required="">
-                    <input type="text" placeholder="Email" required="">
-                    <textarea placeholder="Em que posso te ajudar?"></textarea>
-                    <button  class="btnenviar"type="submit">Enviar</button>
+                    <label>Nome completo</label>
+                    <input class="name" type="text" placeholder="Nome" required="">
+                    <label>Email</label>
+                    <input class="email" type="text" placeholder="Email" required="">
+                    <label>Como posso te ajudar hoje</label>
+                    <textarea class="text" placeholder="Em que posso te ajudar?"></textarea>
+                    <div class="btn">
+                        <button class="btnenviar" type="submit">Enviar</button>
+                    </div>
                 </form>
             </div>
             <div class="contato">
-                <ul class="contact">
-                    <li>
-                        <a class="linkinstagram" href="https://instagram.com/adailsomsil?igshid=ZDdkNTZiNTM=" target="_blank">
-                            <i class="Instagram" aria-hidden="true">
-                                <img src="insta.jpeg">
-                            </i>
+                    <i class="mdi">
+                        <div class="cont">
+                            <a class="linkinstagram" href="https://instagram.com/adailsomsil?igshid=ZDdkNTZiNTM="
+                            target="_blank">
+                            <div class="instagram">
+                                <span class="mdi mdi-instagram"></span>
+                            </div>
                         </a>
-                    </li>
-                    <li>
-                        <a class="linklinkendin"href="https://www.linkedin.com/in/adailsom-silva-bb270bba/" target="_blank">
-                            <i class="Linkendin" aria-hidden="true">
-                                <img src="in.png">
-                            </i>
+                        <a class="linklinkendin" href="https://www.linkedin.com/in/adailsom-silva-bb270bba/"
+                            target="_blank">
+                            <div class="linkedin">
+                                <span class="mdi mdi-linkedin"></span>
+                            </div>
                         </a>
-                    </li>
-                    <li>
-                        
                         <a class="linkemail" href="https://outlook.live.com/mail/0/inbox" target="_blank">
-                            <i class="Email" aria-hidden="true">
-                                <img src="images.jpeg">
-                            </i>
+                            <div class="email-arrow">
+                                <span class="mdi mdi-email-edit"></span>
+                            </div>
                         </a>
-                    </li>
-                </ul>
+                        </div>
+                          
+                    </i>
             </div>
         </div>
     </footer>
+
 
 </body>
 

@@ -5,61 +5,63 @@ body {
     padding: 0;
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
-    background-color: black;
+    height: 80vh;
+    background-color: #fff;
 }
 .cabeca {
     width: 100%;
-    height: 60px;
+   
     display: flex;
     flex-direction: row;
 }
 .navbar {
     width: 100%;
-    background-color: #ff4081;
+    background-color: #29b6f6;
     display: flex;
     flex-direction: row;
     padding: 0 2rem;
-    box-shadow: 0 2px 0 3px  #f06292;
+    box-shadow: 0 1px 0 1px  #b3e5fc;
 }
 
-.foto-nome {
-    /*margin-top: 4px;*/
+/*.foto-nome {
+    margin-top: 4px;
     width: 100%;
     border-radius: 50px;
     display: flex;
     flex-direction: row;
-    color:#fce4ec;
+    color:#000;
     justify-content: space-between;
 }
 .foto-nome img {
     border-radius: 50px;
-   /* box-shadow: 0 2px 1px 1px #f48fb1;*/
-}
+   box-shadow: 0 2px 1px 1px #f48fb1;
+}*/
 .links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .link-pagina {
     text-decoration-line: none;
     display: flex;
     flex-direction: row;
-    gap:1rem;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 8rem;
     align-items: center;
     list-style: none;
 }
 .linkservico, a {
     text-decoration: none;
-    color: #fce4ec;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .main-contaner {
     height: 500px;
-    width: 100%;
-    margin: 1rem;
+    width: 95%;
+    margin: 1.25rem;
     display: flex;
     flex-direction: row;
     display: flex;
@@ -75,20 +77,53 @@ body {
     align-content: center;
     align-items: center;
 }
+.text-about-me {
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.servi {
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.titration {
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.profile {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.serv {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.especializacao {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contabeis {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.administracao {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .resumo {
     font-size: 1rem;
-    color:#fce4ec;
+    color:#000;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .foto-resumo {
-    /*margin-left: 3rem;*/
     width: 50%;
-    height: 300px;
+    height: 250px;
     border-radius: 20%;
     display: flex;
     flex-direction: column;
@@ -99,13 +134,13 @@ body {
     width: 50%;
     /*height: 500px;*/
     border-radius: 50px;
-    box-shadow: 2px 2px 0.5px 0.5px #f8bbd0;
+    box-shadow: 2px 2px 0.5px 0.5px #e1f5fe;
 }
 .servico {
     display: flex;
     flex-direction: column;
     width: 80%;
-    color:#fce4ec;
+    color:#000;
     justify-content: center;
     align-items: center;
 }
@@ -116,93 +151,96 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:#fce4ec;
+    color:#000;
 }
 .contacts footer {
+    position: fixed;
     width: 100%;
+    height: 200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    bottom: 9rem;
 }
 .contatos {
     width: 80%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .sujestao {
-    margin-top: 1rem;
-    /*margin:0 auto;*/
-    width: 35%;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 200px;
 }
 .contato-sujestao {
     display: flex;
     flex-direction: column;
-    /*height: 200px;*/
-    gap:1rem;
+    gap: 0.25rem;
 }
-input {
-    border-radius: 10px;
-    border: 1px solid #000;
-    /*height: 1.75rem;*/
+
+.name {
+    height: 20px;
 }
-textarea {
-    border-radius: 10px;
-    border: 1px solid #000;
-    /*height: 2.5rem;*/
+.email {
+    height: 20px;
+}
+.text {
+    height: 45px;
+}
+.btn {
+    width: 100%;
 }
 button {
     border-radius: 10px;
     border: 1px solid #000;
 }
 .btnenviar {
-    background-color: #FF1493;
-   /* height: 1.75rem;*/
-    width: 20%;
+    background-color: #29b6f6;
+    height: 30px;
+    width: 100%;
     border: 1px solid #000;
 }
 .contato {
-    width: 30%;
-   /* height: 300px;*/
+    width: 100%;
+    height: 200px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    justify-content: center;
+    
 }
-.contact {
-    display: flex;
-    flex-direction: row;
-}
+
 .linkinstagram {
 
-   /* height: 30px;*/
 }
-.Instagram {
-    width: 20%;
-   /* height: 10%;*/
-    border-radius: 10px;
-}
-.Instagram img {
-    border-radius: 20px;
-   /* height: 50px;*/
-    width: 35%;
-}
-.linklinkendin {
-    width: 30%;
-}
-.linklinkendin {
+.cont {
     width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
 }
-.Linkendin img {
-    border-radius: 10%;
-   /*height: 50px;*/
-    width: 35%;
+.mdi {
+    font-size: 3rem;
 }
-.linkemail {
-    width: 20%;
+.instagram {
+    cursor: pointer;
+    color: #FF1493;
 }
-.Email {
-  width: 100%;
+.linkedin {
+    cursor: pointer;
+    color: #303f9f;
 }
-.Email img {
-  width: 35%;
-  border-radius: 10%;
+.email-arrow {
+    cursor: pointer;
+   color: #f44336;
 }
